@@ -1,0 +1,35 @@
+.typewriter-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .static-text {
+    font-size: 1.2em; /* Adjust as needed */
+    color: black; /* Adjust to match your design */
+  }
+  
+  .typewriter {
+    display: inline-block;
+    position: relative;
+    font-family: monospace; /* Optional: for a typewriter effect */
+    font-size: 1.2em; /* Adjust as needed */
+    color: black; /* Ensure the text color contrasts with the background */
+  }
+  
+  .cursor {
+    display: inline-block;
+    width: 2px; /* Width of the cursor */
+    height: 1em; /* Height of the cursor */
+    background-color: black; /* Adjust to match or contrast with text color */
+    position: absolute;
+    top: 0;
+    right: 0; /* Position at the end of the text */
+    animation: blink 1s step-start infinite;
+  }
+  
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
