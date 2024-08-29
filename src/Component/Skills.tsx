@@ -46,7 +46,7 @@ function Skills({ isDarkMode }: { isDarkMode: boolean }) {
 
   return (
     <>
-    <section id="skills" className={`p-10 w-5/6 m-auto ${isDarkMode ? 'bg-zinc-800' : 'bg-pink-100'}`}>
+    <section id="skills" className={`p-10 w-full m-auto`}>
     <motion.h2 className="heading text-center text-4xl text-wrap font-extrabold bg-clip-text"  initial={{ opacity: 0, y: -50 }}
            ref={ref}
             animate={{ opacity: 1, y: 0 }}
@@ -54,7 +54,7 @@ function Skills({ isDarkMode }: { isDarkMode: boolean }) {
             whileInView={{opacity:1, x:0}} 
             viewport={{  amount: 0.5 }}>Skills </motion.h2>
 
-      <div className="relative flex h-full w-full max-w-[32rem] items-center justify-center overflow-hidden px-20 mx-auto">
+      <div className="relative flex h-full w-full max-w-[36rem] items-center justify-center overflow-hidden px-20 mx-auto">
         <IconCloud iconSlugs={iconSlugs} isDarkMode={isDarkMode} />
       </div>
       </section>

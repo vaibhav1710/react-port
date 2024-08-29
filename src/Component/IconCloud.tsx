@@ -38,12 +38,15 @@ export const renderCustomIcon = (icon: SimpleIcon, isDarkMode: boolean) => {
   const fallbackHex = isDarkMode ? "#ffffff" : "#6e6e73";
   const minContrastRatio = isDarkMode ? 2 : 1.2;
 
+  const screenWidth = window.innerWidth;
+  const size = screenWidth < 640 ? 50 : screenWidth < 768 ? 42 : 36; 
+
   return renderSimpleIcon({
     icon,
     bgHex,
     fallbackHex,
     minContrastRatio,
-    size: 42,
+    size,
     aProps: {
       href: undefined,
       target: undefined,
